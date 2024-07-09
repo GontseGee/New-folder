@@ -7,18 +7,18 @@ Create the user's UI
 
 STEP 2
 create the Admin's UI
--an option to choose the winning balls(6)
+-an option to choose the winning balls(6)(it has to be randomized0.)
 - the part to see who and how many people won the bet 
 -the part for checking the total number of bets for those draws
 
 STEP 3
 calculations
-- the total number of boards the user has selected * 5
+- the total number of boards the user has selected * R5
 -lottoplus = R2.5 so if it is Lottoplus 1 and 2 = R2.5* 2
 - 
 STEP 4
--generate 2 or more tickets if the user chosses more than 10 boards(max 10 boards per ticket)
--return an error message or something if the user chooses more than 6 numbers on a board
+-generate 2 or more tickets if the user chooses more than 10 boards(max 10 boards per ticket)
+-return an error message or something if the user chooses more than 6 numbers on a board(user friendly way to solve this )
 
 STEP 5 and more to be added after applying these following steps to the code
 

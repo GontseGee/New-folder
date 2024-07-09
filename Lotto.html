@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Ticket Generator</title>
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotto App</title>
+  <link rel="stylesheet" href="lotto.css">
+  <script src ="lotto.js"> </script>
 </head>
-<body>
-    <!-- Admin and Normal User Switch -->
-    <div class="user-switch">
-        <label for="user-type">Switch User Type:</label>
-        <select id="user-type">
-            <option value="normal">Normal User</option>
-            <option value="admin">Admin</option>
-        </select>
-    </div>
 
-    <!-- Number Selection -->
-    <div class="number-selection">
-        <h2>Select Your Numbers</h2>
-        <div id="numbers"></div>
-    </div>
 
-    <!-- Lotto Plus Options -->
-    <div class="lotto-plus">
-        <label>
-            <input type="checkbox" id="lotto-plus-1"> Enter Lotto Plus 1
-        </label>
-        <label>
-            <input type="checkbox" id="lotto-plus-2"> Enter Lotto Plus 2
-        </label>
-    </div>
+<header>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Normal User</a></li>
+        <li><a href="#">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="number-selection">
+      <h2>Choose Your Numbers</h2>
+      <ul class="number-grid" id="number-grid">
+        <li><button class="ball" data-number="1">1</button></li>
+      <li><button class="ball" data-number="2">2</button></li>
+      <li><button class="ball" data-number="3">3</button></li>
+      <li><button class="ball" data-number="4">4</button></li>
+      <li><button class="ball" data-number="5">5</button></li>
+      </ul>
+    </section>
+  
+    <section class="ticket-cost">
+      <h2> Ticket Cost: <span id="ticket-cost">R0.00</span></h2>
+    </section>
+  
+    <section class="lotto-plus">
+      <h2>Lotto Plus Options</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="lotto-plus-1">
+          <label for="lotto-plus-1">Enter Lotto Plus 1</label>
+        </li>
+        <li>
+          <input type="checkbox" id="lotto-plus-2">
+          <label for="lotto-plus-2">Enter Lotto Plus 2</label>
+        </li>
+      </ul>
+    </section>
+  
+    <section class="board-generation">
+      <h2>Generate Boards</h2>
+      <form>
+        <label for="boards">How many boards do you want to enter with?</label>
+        <input type="number" id="boards" value="1">
+        <button type="submit">Generate Boards</button>
+      </form>
+    </section>
+  
+    <section class="board-selection" style="display: none;">
+      <h2>Select Your Boards</h2>
+      <ul class="board-grid" id="board-grid">
+      </ul>
+    </section>
+  </main>
+ 
 
-    <!-- Ticket Generation -->
-    <div class="ticket-generation">
-        <label for="boards">Number of Boards:</label>
-        <input type="number" id="boards" min="1" max="10" value="1">
-        <button id="generate-tickets">Generate Tickets</button>
-    </div>
+  <footer>
+    <p>&copy; 2024 Lottery App</p>
 
-    <!-- Ticket Display -->
-    <div id="tickets"></div>
-
-    <!-- Script to handle functionality -->
-    <script src="scripts.js"></script>
-</body>
-</html>
+  </footer>
