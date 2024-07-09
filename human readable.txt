@@ -1,0 +1,72 @@
+1.
+Initialize the  App:
+  - Set initial state (user/admin)different pages
+  - Load saved data from localStorage
+  - the user interface appears
+
+Toggle View:
+  - Switch between admin and user view
+
+
+2
+Select Numbers:
+  - Display 52 balls (1-52) with different colors
+  - Allow user to select 6 numbers
+  - Display selected numbers and total cost of each board
+
+Color Coding for the balls:
+  - Red: 1 - 13
+  - Yellow: 14 - 25
+  - Green: 26 - 37
+  - Blue: 38 - 52
+
+3.
+
+Lotto Plus Entry:
+  - Provide checkboxes for Lotto Plus 1 and Lotto Plus 2
+  - Calculate additional cost if lottoplus was selected
+  - Display total cost
+
+
+4.
+Generate the Boards:
+  - Ask user how many boards they want
+  - Generate empty boards based on user input
+  - Allow user to select numbers for each board
+  - Display boards and their numbers
+
+5
+Simulate the Draw:(admin)
+  - Generate 6 random numbers (1-52) for the draw
+  - Compare each user’s ticket with drawn numbers
+  - Determine winners (3 or more matching numbers)
+  - Save winning tickets and draw results in localStorage
+  - Notify admin of the total winning tickets.
+
+6
+Select the  Boards:
+  - Allow user to input number of boards (max 10 per ticket)
+  - Create tickets based on the number of boards
+  - Calculate and display total price
+
+Give them an option for Lotto Plus:
+  - Use same numbers for Lotto Plus 1 and Lotto Plus 2 if selected
+  - Create additional tickets for Lotto Plus entries
+  - Save ticket details in localStorage
+
+7
+Notify the User:
+  - Display alert with entry details before purchase
+  - Notify user if their numbers won in the draw
+
+Notify Admin:
+  - Alert admin of total winning tickets after the draw
+
+8.
+
+Save Data:
+  - Save selected numbers, ticket details, and draw results in localStorage
+  - Retrieve and display saved data on the page load
+Save Dates:
+  - Save the date of ticket purchase.
+  - Save the date of the draw

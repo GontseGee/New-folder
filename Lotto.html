@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Ticket Generator</title>
+ 
+</head>
+<body>
+    <!-- Admin and Normal User Switch -->
+    <div class="user-switch">
+        <label for="user-type">Switch User Type:</label>
+        <select id="user-type">
+            <option value="normal">Normal User</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+
+    <!-- Number Selection -->
+    <div class="number-selection">
+        <h2>Select Your Numbers</h2>
+        <div id="numbers"></div>
+    </div>
+
+    <!-- Lotto Plus Options -->
+    <div class="lotto-plus">
+        <label>
+            <input type="checkbox" id="lotto-plus-1"> Enter Lotto Plus 1
+        </label>
+        <label>
+            <input type="checkbox" id="lotto-plus-2"> Enter Lotto Plus 2
+        </label>
+    </div>
+
+    <!-- Ticket Generation -->
+    <div class="ticket-generation">
+        <label for="boards">Number of Boards:</label>
+        <input type="number" id="boards" min="1" max="10" value="1">
+        <button id="generate-tickets">Generate Tickets</button>
+    </div>
+
+    <!-- Ticket Display -->
+    <div id="tickets"></div>
+
+    <!-- Script to handle functionality -->
+    <script src="scripts.js"></script>
+</body>
+</html>
