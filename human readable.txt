@@ -10,7 +10,7 @@ Toggle View:
 
 2
 Select Numbers:
-  - Display 52 balls (1-52) with different colors
+  - Display 52 balls (1-52) with different colors by using an array 
   - Allow user to select 6 numbers
   - Display selected numbers and total cost of each board
 
@@ -30,7 +30,7 @@ Lotto Plus Entry:
 
 4.
 Generate the Boards:
-  - Ask user how many boards they want
+  - Ask user how many boards they want by using a
   - Generate empty boards based on user input
   - Allow user to select numbers for each board
   - Display boards and their numbers
@@ -55,6 +55,7 @@ Give them an option for Lotto Plus:
   - Save ticket details in localStorage
 
 7
+ 
 Notify the User:
   - Display alert with entry details before purchase
   - Notify user if their numbers won in the draw
