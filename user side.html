@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Ticket Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Lotto</h1>
+        <div class="input-section">
+            <div>
+                <label for="boards">Number of Boards:</label>
+                <input type="number" id="boards" min="1" value="1">
+            </div>
+            <button onclick="generateTickets()">Generate Tickets</button>
+        </div>
+        <div id="tickets-container"></div>
+        <div class="options-section">
+            <label>
+                <input type="checkbox" id="lottoPlus1">  Lotto Plus 1 (R2.50 per board)
+            </label>
+            <label>
+                <input type="checkbox" id="lottoPlus2"> Lotto Plus 2 (R2.50 per board)
+            </label>
+        </div>
+        <div class="total-cost-section">
+            <h2>Total Cost: R<span id="total-cost">0.00</span></h2>
+        </div>
+        <button onclick="calculateTotalCost()">Calculate Total Cost</button>
+        <button onclick="saveEntries()">Save Entries</button>
+        <h2>Notifications</h2>
+        <div id="notifications"></div>
+    </div>
+    <script src="lotto.js"></script>
+</body>
+</html>
+
+
