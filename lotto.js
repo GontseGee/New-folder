@@ -142,3 +142,19 @@ function loadNotifications() {
 }
 
 document.addEventListener('DOMContentLoaded', loadNotifications);
+
+
+document.getElementById('admin-btn').addEventListener('click', function() {
+  // Redirect to admin page or perform admin-specific action
+  window.location.href = 'admin.html'; // Replace with your admin page URL
+});
+
+document.getElementById('user-btn').addEventListener('click', function() {
+  // Redirect to user page or perform user-specific action
+  window.location.href = 'user.html'; // Replace with your user page URL
+});
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission for this example
+  // Add login validation logic here if needed
+});
